@@ -179,7 +179,7 @@ module Aria2
 				0 :
 				(status['totalLength'] - status['completedLength']).to_f / status['downloadSpeed']
 
-			status
+			status.with_indifferent_access
 		end
 
 		
